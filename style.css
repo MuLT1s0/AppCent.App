@@ -179,7 +179,7 @@ header{
     padding: 1%;
 }
     /* кнопки ниже */
-.block_bottom div{
+.block_button div{
     display: flex;
     /* выбавнивание */
     align-items: center;
@@ -187,7 +187,7 @@ header{
     padding: 1%;
     height: 50px;
 }
-.block_bottom :hover {
+.block_button:hover , .mobile_block_button:hover {
     transition: all 0.2s;
     background-color: #454647;
     cursor: pointer;
@@ -202,6 +202,10 @@ header{
 .online {
     text-align: center;
     margin-top: 12px;
+}
+.mobile_block_button{
+    height: 38px;
+    display: none;
 }
     /* Адоптация */
     @media (max-width: 1000px){
@@ -226,6 +230,18 @@ header{
         }
         .btn_deposit, .btn_Withdraw{
             justify-content: center
+        }
+        .mobile_block_button{
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            background-color: #232324;
+            border-radius: 10px;
+        }
+        .block_button{
+            display: none;
         }
     }
     /* @media (max-width: 401px){
