@@ -1,7 +1,11 @@
-*{
+* {
     margin: 0;
     padding: 0;
     outline: none;
+}
+html{
+    width: 100%;
+    height: 100%;
 }
 @font-face {
     font-family: 'TT Commons';
@@ -9,45 +13,47 @@
         url('/fons/TTCommons-Medium.woff2') format('woff2'),
         url('/fons/TTCommons-Medium.woff') format('woff'),
         url('/fons/TTCommons-Medium.ttf') format('truetype');
-    }
-body{
+}
+
+body {
     background-color: #0a0a0a;
     color: white;
     font-family: 'TT Commons';
     width: 100%;
     height: 100%;
 }
-.container{
+
+.container {
     max-width: 980px;
     margin: auto;
 }
-header{
+
+header {
     padding: 10px;
     background-color: #19191a;
     text-align: center;
     font-size: 27px;
     font-weight: 600;
-    border-bottom:1px solid rgb(54, 52, 52);
+    border-bottom: 1px solid rgb(54, 52, 52);
     align-items: center;
     justify-content: center;
     justify-items: center;
-    min-width: 310px;
 }
 
 /* Блоки для шапки */
-.content_header{
+.content_header {
     justify-content: space-between;
     display: flex;
     flex-wrap: nowrap;
     align-items: center
 }
-.block_left_header{
-}
-.block_right_header{
 
-}
-.btn_login{
-    user-select:none;
+.block_left_header {}
+
+.block_right_header {}
+
+.btn_login {
+    user-select: none;
     width: 100px;
     height: auto;
     padding: 5%;
@@ -58,23 +64,28 @@ header{
     margin: 1%;
     border: 1px solid white;
 }
-.btn_login:hover{
+
+.btn_login:hover {
     border-color: black;
 }
-.btn_login:active{
+
+.btn_login:active {
     background: rgb(43, 41, 41);
     border-color: white;
     color: white;
 }
+
 /* Основные блоки */
-.content_main{
+.content_main {
     display: flex;
     flex-wrap: wrap;
 }
+
 /* Левый блок */
-.block_left_main{
+.block_left_main {
     width: 38%;
 }
+
 /* Блок профиля */
 .block_profile {
     position: relative;
@@ -88,15 +99,17 @@ header{
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
-    width: 260px;
+    /* width: 260px; */
     min-width: 135px;
 }
+
 /* Блоки профиля - "баланс" */
 .Title_name {
     font-weight: 400;
     font-size: 28px;
     text-align: center;
 }
+
 /* Блоки профиля - баланс(Валюта) */
 .Money_balans {
     text-align: center;
@@ -106,6 +119,7 @@ header{
     padding: 1%;
     font-size: 20px;
 }
+
 .money_rub {
     border-radius: 10px;
     background-color: #232324;
@@ -115,6 +129,7 @@ header{
     margin-right: 5%;
     width: 47%;
 }
+
 .balans_iq {
     background-color: #232324;
     border-radius: 10px;
@@ -122,8 +137,9 @@ header{
     padding-bottom: 5px;
     width: 47%;
 }
+
 /* Блоки профиля - кнопки */
-.btn_deposit-Wit {    
+.btn_deposit-Wit {
     text-align: center;
     color: #71aaeb;
     margin-top: 5px;
@@ -132,15 +148,17 @@ header{
     font-size: 20px;
 
 }
-    /* Картинка в кнопках */
-.img_btn{
+
+/* Картинка в кнопках */
+.img_btn {
     color: #71aaeb;
     padding-left: 10px;
     content: "";
     width: 30px;
     height: auto;
 }
-    /* Депозит */
+
+/* Депозит */
 .btn_deposit {
     padding: 1%;
     display: flex;
@@ -152,9 +170,10 @@ header{
     padding-bottom: 5px;
     width: 47%;
     margin-right: 5%;
-    
+
 }
-    /* вывод */
+
+/* вывод */
 .btn_Withdraw {
     padding: 1%;
     display: flex;
@@ -165,89 +184,158 @@ header{
     padding-bottom: 5px;
     width: 47%;
 }
-    /* Наведение на выбод депозит */
-.btn_deposit:hover ,.btn_Withdraw:hover {
+
+/* Наведение на выбод депозит */
+.btn_deposit:hover,
+.btn_Withdraw:hover {
     transition: all 0.2s;
     background-color: #454647;
     cursor: pointer;
 }
-.btn_deposit span , .btn_Withdraw span{
+
+.btn_deposit span,
+.btn_Withdraw span {
     margin-left: 10px;
 }
-.Profile span, .Top span , .more span{
+
+.Profile span,
+.Top span,
+.more span {
     margin-left: 10px;
     padding: 1%;
 }
-    /* кнопки ниже */
-.block_button div{
+
+/* кнопки ниже */
+.block_button {
+    text-align: center;
     display: flex;
-    /* выбавнивание */
+    flex-wrap: wrap;
     align-items: center;
-    border-radius: 15px;
     padding: 1%;
-    height: 50px;
 }
-.block_button:hover , .mobile_block_button:hover {
+
+.block_button :hover,
+.mobile_block_button :hover {
     transition: all 0.2s;
     background-color: #454647;
     cursor: pointer;
 }
-.Profile{
+
+.btn_class {
+    border-radius: 15px;
     margin-top: 10px;
+    padding: 1%;
+    align-content: center;
+    display: flex;
+    align-items: center;
+    width: 100%;
 }
-.Top {
-}
-.more {
-}
+
 .online {
     text-align: center;
     margin-top: 12px;
 }
-.mobile_block_button{
+
+.mobile_block_button {
     height: 38px;
     display: none;
 }
-    /* Адоптация */
-    @media (max-width: 1000px){
-        .block_left_header{
-            white-space: nowrap;
-            font-size: 30px;
-        }
-        .block_left_header{
-            margin-right: 15px;
-        }
-        .container{
-            width: 90%;
-        }
-        .content_header {
-            display: flex;
-            flex-wrap: nowrap;
-            align-items: center;
-            justify-content: space-around
-        }
-        .btn_deposit span , .btn_Withdraw span{
-            display: none;
-        }
-        .btn_deposit, .btn_Withdraw{
-            justify-content: center
-        }
-        .mobile_block_button{
-            margin-top: 10px;
-            display: flex;
-            align-items: center;
-            text-align: center;
-            justify-content: center;
-            background-color: #232324;
-            border-radius: 10px;
-        }
-        .block_button{
-            display: none;
-        }
+
+/* Адоптация */
+@media (max-width: 1000px) {
+    .block_left_header {
+        white-space: nowrap;
+        font-size: 30px;
     }
-    /* @media (max-width: 401px){
-        .content_header {
+
+    .block_left_header {
+        margin-right: 15px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .content_header {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-around
+    }
+
+    .btn_deposit span,
+    .btn_Withdraw span {
+        display: none;
+    }
+
+    .btn_deposit,
+    .btn_Withdraw {
+        justify-content: center
+    }
+
+    .mobile_block_button {
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        background-color: #232324;
+        border-radius: 10px;
+    }
+
+    .block_button {
+        display: none;
+    }
+}
+
+@media (max-width: 401px) {
+    .content_header {
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
-        }
-    } */
+    }
+}
+.block_right_main{
+    width: 60%;
+}
+.block_game{
+    margin-left: 2%;
+    padding: 1%;
+    background-color: #19191a;
+    border: 1px solid rgb(54, 52, 52);
+    font-size: 20px;
+    margin-top: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    height: 640px;
+    min-width: 140px;
+}
+@media (max-width: 1000px) {
+    .block_right_main{
+        margin-left: 1%;
+        width: 50%;
+    }
+    .content_main{
+        justify-content: center
+    }
+}
+@media (max-width: 500px) {
+    .content_main{
+        display: flex;
+        flex-wrap: wrap
+    }
+    .block_left_main{
+        width: 98%;
+        padding: 1%;
+    }
+    .block_right_main{
+        width: 98%;
+        padding: 1%;
+    }
+    .block_game{
+        margin-left: 0%;
+    }
+}
