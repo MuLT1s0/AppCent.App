@@ -44,7 +44,7 @@ header {
 
 /* Блоки для шапки */
 .content_header {
-    justify-content: space-between;
+    justify-content: space-around;
     display: flex;
     flex-wrap: nowrap;
     align-items: center
