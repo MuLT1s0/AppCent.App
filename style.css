@@ -3,10 +3,12 @@
     padding: 0;
     outline: none;
 }
-html{
+
+html {
     width: 100%;
     height: 100%;
 }
+
 @font-face {
     font-family: 'TT Commons';
     src: local('TT Commons  Medium'), local('TT-Commons--Medium'),
@@ -50,7 +52,8 @@ header {
 
 .block_left_header {}
 
-.block_right_header {}
+.block_right_header {
+}
 
 .btn_login {
     user-select: none;
@@ -99,8 +102,6 @@ header {
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
-    /* width: 260px; */
-    min-width: 135px;
 }
 
 /* Блоки профиля - "баланс" */
@@ -118,6 +119,7 @@ header {
     font-size: 20px;
     padding: 1%;
     font-size: 20px;
+    justify-content: space-around;
 }
 
 .money_rub {
@@ -127,7 +129,7 @@ header {
     padding-top: 10px;
     padding-bottom: 5px;
     margin-right: 5%;
-    width: 47%;
+    width: 45%;
 }
 
 .balans_iq {
@@ -135,7 +137,7 @@ header {
     border-radius: 10px;
     padding-top: 10px;
     padding-bottom: 5px;
-    width: 47%;
+    width: 45%;
 }
 
 /* Блоки профиля - кнопки */
@@ -146,13 +148,12 @@ header {
     display: flex;
     padding: 1%;
     font-size: 20px;
-
+    justify-content: space-around;
 }
 
 /* Картинка в кнопках */
-.img_btn {
+.img_btn_i {
     color: #71aaeb;
-    padding-left: 10px;
     content: "";
     width: 30px;
     height: auto;
@@ -160,6 +161,8 @@ header {
 
 /* Депозит */
 .btn_deposit {
+    align-items: center;
+    justify-content: center;
     padding: 1%;
     display: flex;
     flex-wrap: nowrap;
@@ -168,21 +171,22 @@ header {
     border-radius: 10px;
     padding-top: 10px;
     padding-bottom: 5px;
-    width: 47%;
+    width: 45%;
     margin-right: 5%;
 
 }
 
 /* вывод */
 .btn_Withdraw {
-    padding: 1%;
+    align-items: center;
+    justify-content: center;
     display: flex;
     flex-wrap: nowrap;
     background-color: #232324;
     border-radius: 10px;
     padding-top: 10px;
     padding-bottom: 5px;
-    width: 47%;
+    width: 45%;
 }
 
 /* Наведение на выбод депозит */
@@ -276,6 +280,8 @@ header {
     }
 
     .mobile_block_button {
+        margin-left: 1%;
+        margin-right: 1%;
         margin-top: 10px;
         display: flex;
         align-items: center;
@@ -297,11 +303,13 @@ header {
         flex-wrap: wrap;
     }
 }
+
 /*Правое поле*/
-.block_right_main{
+.block_right_main {
     width: 60%;
 }
-.block_game{
+
+.block_game {
     margin-left: 2%;
     padding: 5%;
     background-color: #19191a;
@@ -312,44 +320,51 @@ header {
     display: flex;
     flex-direction: column;
     height: 640px;
-    min-width: 140px;
 }
+
 /*Блок с названием*/
-.title_block{
+.title_block {
     display: flex;
     align-items: baseline;
 }
-.Style_title_name{
+
+.Style_title_name {
     padding: 0 16px;
     font-size: 15px;
     line-height: 16px;
     color: #76787A;
 }
-/*Блок с рекламой*//*Блок с рекламой*/
-.block_ads-video{
+
+/*Блок с рекламой*/
+/*Блок с рекламой*/
+.block_ads-video {
     margin-top: 15px;
     height: auto;
     width: 100%;
     background: linear-gradient(90deg, rgb(105, 115, 255) 0%, rgb(64, 175, 252) 100%);
     border-radius: 8px;
 }
+
 /*Сонтент в блоке рекламы*/
-.content_block_ad{
-padding: 3%;
+.content_block_ad {
+    padding: 3%;
 }
+
 /*Название в блоке рекламы*/
-.Title_block_ads{
+.Title_block_ads {
     color: white;
 }
+
 /*Текст после названия В блоке рекламы*/
-.h1_block_ad{
+.h1_block_ad {
     margin-top: 2px;
     font-size: 14px;
     opacity: .72;
     line-height: 18px;
 }
+
 /*Кнопка смотреть В блоке рекламы*/
-.Btn_ad{
+.Btn_ad {
     text-align: center;
     margin-top: 10px;
     color: #2c2d2e;
@@ -360,45 +375,161 @@ padding: 3%;
     border-radius: 8px;
     user-select: none;
 }
-.Btn_ad :active{
+
+.Btn_ad :active {
     opacity: 0.4;
 }
+
 /*Адоптация правого блока*/
 @media (max-width: 1000px) {
-    .block_right_main{
+    .block_right_main {
         margin-left: 1%;
         width: 50%;
     }
-    .content_main{
+
+    .content_main {
         justify-content: center
     }
 }
-@media (max-width: 500px) {
-    .content_main{
+
+@media (max-width: 550px) {
+    .content_main {
         display: flex;
         flex-wrap: wrap
     }
-    .block_left_main{
+
+    .block_left_main {
         width: 98%;
         padding: 1%;
     }
-    .block_right_main{
+
+    .block_right_main {
         width: 98%;
         padding: 1%;
     }
-    .block_game{
+
+    .block_game {
         margin-left: 0%;
     }
-    .Btn_ad{
+
+    .Btn_ad {
         text-align: center;
         width: 100%;
-        padding: 0%
+        padding: 0%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 25px;
+        
     }
-    .Title_block_ads{
+
+    .Title_block_ads {
         text-align: center;
     }
-    .Style_title_name{
+
+    .Style_title_name {
         justify-content: center
     }
-    
+    .h1_block_ad{
+        margin-top: 10px;
+        font-size: 20px;
+        text-align: center;
+    }
+}
+/*Следующий блок Бонусы-помощь*/
+.block_bonus_help {
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+}
+/*Контент блока*/
+.content_block_bon_help {
+    width: 99%;
+    padding: 1%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+/*Сам блок*/
+.bloks_content{
+    display: flex;
+    padding: 2%;
+    align-items: center;
+    background: #2c2d2e;
+    border-radius: 10px;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+/*Картинка в блоках*/
+.img_btn{
+    display: flex;
+    justify-content: center;
+}
+.bonus {
+}
+.img_btn{
+    width: 40px;
+    height: 40px;
+    color: linear-gradient(100deg, rgb(105, 115, 255) 0%, rgb(64, 175, 252) 100%);
+}
+/* Небольшая настройка бонусново дифа*/
+.bonus_div {
+    display: flex;
+    margin-left: 10px;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.Btn_Help {
+}
+.Help_div {
+    margin-left: 10px;
+}
+.bloks_content:hover{
+    cursor: pointer;
+}
+/*меняется прозрачность при навидение на блоки доступные бонусы и помощь*/
+.content_block_bon_help :hover{
+    opacity: 0.8;
+}
+/*на 700 картинка уменьшается и шрифт*/
+@media (max-width: 700px){
+    .img_btn{
+        width: 25px;
+        height: 25px;
+    }
+    span{
+        font-size: 20px;
+    }
+}
+@media (max-width: 610px){
+    .bloks_content{
+        width: 100%;
+        justify-content: center
+    }
+    .bloks_content{
+        margin-top: 10px;
+    }
+}
+/*На очень маленьких телефонах будет все хорошо с кнопками*/
+@media (max-width: 310px){
+    .content_block_bon_help{
+        flex-wrap: wrap;
+        
+    }
+    .block_right_header {
+        margin-top: 5px;
+    }
+    .content_header {
+        display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: wrap;
+    }
+    .block_left_header {
+        font-size: 20px;
+        margin-right: 0px;
+    }
 }
