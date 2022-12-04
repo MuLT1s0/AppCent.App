@@ -233,13 +233,15 @@ header {
 
 .online {
     text-align: center;
-    margin-top: 12px;
+    margin-top: 35px;
+    animation: both;
 }
 
 .mobile_block_button {
     height: 38px;
     display: none;
 }
+
 
 /* Адоптация */
 @media (max-width: 1000px) {
@@ -295,24 +297,73 @@ header {
         flex-wrap: wrap;
     }
 }
+/*Правое поле*/
 .block_right_main{
     width: 60%;
 }
 .block_game{
     margin-left: 2%;
-    padding: 1%;
+    padding: 5%;
     background-color: #19191a;
     border: 1px solid rgb(54, 52, 52);
     font-size: 20px;
     margin-top: 20px;
     border-radius: 15px;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    justify-content: center;
     height: 640px;
     min-width: 140px;
 }
+/*Блок с названием*/
+.title_block{
+    display: flex;
+    align-items: baseline;
+}
+.Style_title_name{
+    padding: 0 16px;
+    font-size: 15px;
+    line-height: 16px;
+    color: #76787A;
+}
+/*Блок с рекламой*//*Блок с рекламой*/
+.block_ads-video{
+    margin-top: 15px;
+    height: auto;
+    width: 100%;
+    background: linear-gradient(90deg, rgb(105, 115, 255) 0%, rgb(64, 175, 252) 100%);
+    border-radius: 8px;
+}
+/*Сонтент в блоке рекламы*/
+.content_block_ad{
+padding: 3%;
+}
+/*Название в блоке рекламы*/
+.Title_block_ads{
+    color: white;
+}
+/*Текст после названия В блоке рекламы*/
+.h1_block_ad{
+    margin-top: 2px;
+    font-size: 14px;
+    opacity: .72;
+    line-height: 18px;
+}
+/*Кнопка смотреть В блоке рекламы*/
+.Btn_ad{
+    text-align: center;
+    margin-top: 10px;
+    color: #2c2d2e;
+    padding: 1%;
+    background: white;
+    width: 100px;
+    font-size: 18px;
+    border-radius: 8px;
+    user-select: none;
+}
+.Btn_ad :active{
+    opacity: 0.4;
+}
+/*Адоптация правого блока*/
 @media (max-width: 1000px) {
     .block_right_main{
         margin-left: 1%;
@@ -338,4 +389,16 @@ header {
     .block_game{
         margin-left: 0%;
     }
+    .Btn_ad{
+        text-align: center;
+        width: 100%;
+        padding: 0%
+    }
+    .Title_block_ads{
+        text-align: center;
+    }
+    .Style_title_name{
+        justify-content: center
+    }
+    
 }
