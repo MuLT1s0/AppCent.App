@@ -12,9 +12,9 @@ html {
 @font-face {
     font-family: 'TT Commons';
     src: local('TT Commons  Medium'), local('TT-Commons--Medium'),
-        url('/fons/TTCommons-Medium.woff2') format('woff2'),
-        url('/fons/TTCommons-Medium.woff') format('woff'),
-        url('/fons/TTCommons-Medium.ttf') format('truetype');
+        url('fons/TTCommons-Medium.woff2') format('woff2'),
+        url('fons/TTCommons-Medium.woff') format('woff'),
+        url('fons/TTCommons-Medium.ttf') format('truetype');
 }
 
 body {
